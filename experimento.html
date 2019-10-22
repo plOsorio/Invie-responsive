@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+	<style>
+/*...............................general.......................*/
+		p{
+			height: 100px;
+			width: 100px;
+			border: 1px black solid;
+			justify-content: center;
+			align-items: center;
+	    	display: flex;	
+	    	font-size: 16px;
+	    	font-weight: bold;
+	    	font-family: sans-serif;
+		}
+		h2{
+			display: flex;
+			justify-content: center;
+			margin-top: 60px;
+		}
+/*...............................display-property.......................*/
+
+	.display-property{}
+		
+		.d-block{
+			display: block;
+			background: red;
+		}
+		.d-inlineb{display:inline-block;
+			background-color: red;}
+		
+
+
+/*...............................margin-auto.......................*/
+		.margin-auto{
+			width: 600px;
+			margin: 0 auto;
+			background: red;
+		}
+		.margin-auto-hijo{
+			    background: blue;
+    			width: 100px;
+    			margin: 0 auto;
+		}
+
+/*...............................max-width.......................*/
+.max-width{
+	max-width: 300px;
+	background: blue;
+	margin:0 auto;
+}
+
+/*...............................the box model.......................*/
+
+.simple-a {
+  width: 500px;
+  margin: 20px auto;
+  background: red;
+}
+
+.fancy-a {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border-width: 10px;
+  background: blue;
+}
+
+
+/*...............................the box sizing.......................*/
+
+.simple-b {
+  width: 500px;
+  margin: 20px auto;
+  background: red;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fancy-b {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  background: blue;
+  border: solid blue 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+	</style>
+<body>
+<div class="display-property">
+	<div class="d-block"><p>block</p></div>
+	<div class="d-inlineb"><p>inline-block</p></div>
+</div>
+
+	<div class="margin-auto">
+		<div class="margin-auto-hijo"><p>margin-auto</p>
+		</div>	
+	</div>
+	<div class="max-width">
+		<p>
+			max-width
+		</p>
+	</div>
+
+	<div class="box-model">
+		<h2>The box model</h2>
+		<div class="simple-a"><p>simple</p></div>
+		<div class="fancy-a"><p>fancy</p></div>
+	</div>
+	<div class="the-box-sizing">
+		<h2>the box sizing</h2>
+		<div class="simple-b"><p>simple</p></div>
+		<div class="fancy-b"><p>fancy</p></div>
+	</div>
+</body>
+</html>
